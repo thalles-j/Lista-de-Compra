@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compra</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="assets/script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>SUA LISTA DE COMPRA</p>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container-adicionar">
+                <img src="assets/img/bag.png" class="sacola" alt="sacola de compras">
+                <form>
+                    <input type="text" class="input-item" placeholder="Digte o item que deseja adicionar">
+                    <button id="adicionar-botao">Salvar item</button>
+                </form>
+            </div>
+            <h2>Lista de Compras</h2>
+            <hr />
+
+            <ul>
+                <li>
+                    <div class="container-item-lista"> 
+                        <div class="container-nome-compra">
+                            <div class="container-checkbox">
+                                <label for="checkbox-1">
+                                    <input type="checkbox" class="checkbox-input" id="checkbox-1" />
+                                    <div class="checkbox-customizado checked"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <button>
+                                <img src="assets/img/delete.svg" alt="Deletar">
+                            </button>                   
+                            <button>
+                                <img src="assets/img/edit.svg" alt="Editar">
+                            </button>
+                        </div>
+                    </div>
+                    <span class="result"></span>
+                </li>
+            </ul>
+
+
+        </section>
+
+
+    </main>
+    
+</body>
+</html>
