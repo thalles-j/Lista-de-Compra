@@ -17,6 +17,8 @@ export function addItem(e) {
     itemDate.innerText = `${dataAtual.toLocaleDateString('pt-BR', { weekday: 'long' })} (${dataAtual.toLocaleDateString()}) às ${dataAtual.toLocaleTimeString()}`;
     itemDate.setAttribute("class", "data");
 
+
+    
     // Função de remoção
     const onRemove = function () {
         novoItem.remove();
@@ -24,8 +26,15 @@ export function addItem(e) {
 
     // Função de edição
     const onEdit = function () {
-        const novoInput = prompt('Editar o item:', nomeDoItem.textContent);
-        if (novoInput) nomeDoItem.textContent = novoInput;
+        const novoInput = prompt('Editar o item:', novoItem.querySelector('.item-name').textContent);
+        if (novoInput) {
+            // Atualiza o nome do item na lista
+            novoItem.querySelector('.item-name').textContent = novoInput;
+
+            // Atualiza a data e hora da edição
+            dataAtual = new Date();
+            itemDate.innerText = `${dataAtual.toLocaleDateString('pt-BR', { weekday: 'long' })} (${dataAtual.toLocaleDateString()}) às ${dataAtual.toLocaleTimeString()}`;
+        }
     };
 
     const novoItem = createListItem(itemValue, contador++, itemDate, onEdit, onRemove, listaDeCompra, listaComprados);

@@ -180,7 +180,7 @@ ul {
 }
 
 .item-lista-button {
-    margin: 0;
+    margin-left: 0.5rem;
     overflow: hidden;
     padding : 5px 5px 1px;
     border: none;

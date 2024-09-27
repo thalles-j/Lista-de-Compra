@@ -1,5 +1,4 @@
 // assets/script/createListItem.js
-
 export function createListItem(itemValue, contador, itemDate, onEdit, onRemove, listaDeCompra, listaComprados) {
     const novoItem = document.createElement('li');
 
