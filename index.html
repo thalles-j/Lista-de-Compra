@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Compra</title>
     <link rel="stylesheet" href="assets/style/style.css">
-    <script src="assets/script/script.js" defer></script>
+    <script src="assets/script/script.js" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -15,48 +15,25 @@
     </header>
     <main>
         <section>
-            <div class="container-adicionar">               
-                    <img src="assets/img/bag.png" class="img-sacola" alt="sacola de compras">                
+            <div class="container-adicionar">
+                <img src="assets/img/bag.png" class="img-sacola" alt="sacola de compras">
                 <form>
-                    <input type="text" class="input-item" placeholder="Digte o item que deseja adicionar">
-                    <button class="adicionarBtn">Salvar item</button>
+                    <input type="text" class="input-item" placeholder="Digite o item que deseja adicionar">
+                    <button class="addItem">Salvar item</button>
                 </form>
             </div>
             <div class="container-lista">
                 <h2>Lista de compras</h2>
                 <hr>
-    
-                <ul class="lista-de-compras">
-                    <li>
-                        <div class="lista-item-container">
-                            <div>
-                                <div class="container-checkbox">
-                                    <label for="checkbox-1">
-                                        <input type="checkbox" class="input-checkbox" id="checkbox-1" />
-                                        <div class="checkbox-customizado checked"></div>
-                                    </label>
-                                </div>
-                                <p>Ração de gato</p>
-                            </div>
-    
-                            <div>
-                                <button class="item-lista-button">
-                                    <img src="assets/img/delete.svg" alt="remover">
-                                </button>
-                                <button class="item-lista-button">
-                                    <img src="assets/img/edit.svg" alt="editar">
-                                </button>
-                            </div>
-                        </div>
-                        <span class="texto-data">Segunda-feira (31/10/2022) às 08:30</span>
-                    </li>
-                </ul>
+                <ul id="listaDeCompras"></ul>
+
+                <div id="containerListaComprados">
+                    <h2>Comprados</h2>
+                    <hr />
+                    <ul id="comprados"></ul>
+                </div>
             </div>
-
         </section>
-
-
     </main>
-    
 </body>
 </html>
