@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Compra</title>
     <link rel="stylesheet" href="assets/style/style.css">
-    <script src="assets/script/script.js" type="module" defer></script>
+    <script src="assets/script/index.js" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -25,7 +25,9 @@
             <div class="container-lista">
                 <h2>Lista de compras</h2>
                 <hr>
-                <ul id="listaDeCompras"></ul>
+                <ul id="listaDeCompras">
+                    <p id="msgVazia" style="display:block;">Sua lista está vazia. Adicione itens a ela para não esquecer nada na próxima compra!</p>
+                </ul>
 
                 <div id="containerListaComprados">
                     <h2>Comprados</h2>
